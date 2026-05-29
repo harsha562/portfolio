@@ -235,6 +235,45 @@ footer{position:relative;z-index:1;padding:28px 60px;border-top:1px solid rgba(0
   .contact-wrap{grid-template-columns:1fr;}
   nav{padding:0 20px;} .nav-links{gap:16px;} .nav-links a{font-size:10px;}
   footer{padding:24px;}
+
+  /* Mobile — fix overlapping panels */
+  #friday-panel{
+    width: calc(100vw - 24px) !important;
+    left: 12px !important;
+    bottom: 80px !important;
+    right: 12px !important;
+  }
+  #gesture-panel{
+    bottom: 12px !important;
+    right: 12px !important;
+    left: auto !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-end !important;
+    gap: 8px !important;
+  }
+  #gesture-toggle{
+    font-size: 10px !important;
+    padding: 8px 12px !important;
+    letter-spacing: 1px !important;
+  }
+  #gesture-status{
+    display: none !important;
+  }
+  #gesture-video{
+    width: 100px !important;
+    height: 60px !important;
+  }
+  #gesture-canvas{
+    width: 100px !important;
+    height: 60px !important;
+  }
+  #friday-window{
+    max-height: 50vh !important;
+  }
+  #friday-messages{
+    height: 140px !important;
+  }
 }
 </style>
 </head>
